@@ -7,14 +7,15 @@
   <link rel="stylesheet" href="./styles.css/style.css">
 </head>
 <body>
-  <section>
+  <section class="inputs-container">
     <h1>Update css variables with <span>JS</span></h1>
-    <label for="">Spacing: <input type="range" name="" id=""></label>
-    <label for="">Blur: <input type="range" name="" id=""></label>
-    <label for="">Base color: <input type="color" name="" id=""></label>
+    <label for="">Spacing: <input type="range" min="0" max="10" name="spacing" id="initial-spacing"></label>
+    <label for="">Blur: <input type="range" min="0" max="10" name="" id="initial-blur"></label>
+    <label for="">Base color: <input type="color" name="" id="initial-color"></label>
   </section>
-  <section class="main-container">
-    <img src="./styles.css/images/image1.jpg" alt="">
+  <section class="main-container" id="main-container">
+    <img src="./styles.css/images/image1.jpg" alt="" id="image">
   </section>
 </body>
+<script src="./main.js"></script>
 </html>
