@@ -3,6 +3,7 @@ const initialColor = document.querySelector('#initial-color');
 const initialBlur = document.querySelector('#initial-blur')
 const mainContainer = document.querySelector('#main-container');
 const image = document.querySelector('#image');
+const jsSpan = document.querySelector('span')
 
 
 initialSpacing.addEventListener('input', changePadding)
@@ -21,6 +22,8 @@ function changeColor() {
   let initialColorValue = initialColor.value;
   // console.log(initialColorValue);
   mainContainer.style.setProperty('--base-color', initialColorValue)
+
+  jsSpan.style.setProperty('--base-color', initialColorValue)
 }
 
 function changeBlur() {
